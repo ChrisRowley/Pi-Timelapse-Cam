@@ -1,7 +1,7 @@
 from time import sleep
 from picamera import PiCamera
+from  datetime from datetime
 
-import datetime from datetime
 import yaml
 import os
 import sys
@@ -24,7 +24,7 @@ camera = PiCamera()
 camera.start_preview()
 sleep(2)
 
-for filename in camera.capture_continuous('newdir/img{counter:03d}.jpg'):
+for filename in camera.capture_continuous(newdir + '/img{counter:03d}.jpg'):
     print('Captured %s' % filename)
     sleep(60) # wait 1 minutes
 
