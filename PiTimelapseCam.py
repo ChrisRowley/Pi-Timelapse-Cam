@@ -12,11 +12,10 @@ def create_photo_dir(dir):
     except OSError as e:
         if e.errno != errno.EXIST:
             raise
-
-
-newdir = os.path.join(
-    sys.path[0],
-    'series-' + datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        newdir = os.path.join(
+            sys.path[0],
+            'series-' + datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
+    return
 
 create_photo_dir(newdir)
 
