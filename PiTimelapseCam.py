@@ -32,7 +32,8 @@ def capture_image():
 
     for filename in camera.capture_continuous(newdir + '/img{counter:03d}.jpg'):
         print('Captured %s' % filename)
-        sleep(delay) # wait 1 minutes
+        print('Waiting %s' % delay)
+        sleep(delay) # waits 30 seconds by default
     return
 
 def set_camera_options(camera):
