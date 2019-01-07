@@ -46,9 +46,9 @@ def set_camera_options(camera):
 
 def set_capture_options(delay, quantity):
     if cam_config['capture_delay']:
-            delay = cam_config[delay]
+            delay = cam_config['capture_delay']
     if cam_config['image_quantity']:
-            quantity = cam_config[quantity]
+            quantity = cam_config['image_quantity']
     return(delay,quantity)
 
 create_photo_dir(newdir)
