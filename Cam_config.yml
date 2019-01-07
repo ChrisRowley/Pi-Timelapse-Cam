@@ -1,0 +1,10 @@
+# The number of images to capture
+image_quantity: 120
+
+# The interval between captures (seconds)
+capture_delay: 30
+
+# Image resolution is set to empty an object (`{ }`) to use cameras default resolution
+resolution: { }
+  # width: 480
+  # height: 270
